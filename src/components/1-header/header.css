@@ -1,3 +1,17 @@
+/*======================
+Table of contents
+========================
+
+1. Design Header
+2. Button & Icon
+3. Modal - PopUP
+4. MediaQuery
+*/
+
+/*===============
+1. Design Header
+================*/
+
 header.flex {
   justify-content: space-between;
   padding: 0 2.4rem;
@@ -36,7 +50,44 @@ header button.hamburger__menu {
   display: none;
 }
 
-/* Modal == pop up */
+/*===============
+2. Button & Icon
+================*/
+
+header .icon-menu,
+header button.mode {
+  background-color: var(--bgHeader);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  color: var(--subtitle);
+  transition: 0.5s;
+}
+
+header .icon-menu:hover,
+header button.mode:hover {
+  color: var(--title);
+  border: 1px solid var(--orange);
+}
+
+header .icon-remove {
+  font-size: 1.5rem;
+  color: var(--subtitle);
+  transition: 0.4s;
+}
+
+header .icon-remove:hover {
+  font-size: 1.7rem;
+  color: var(--orange);
+  rotate: 180deg;
+}
+
+/*===============
+3. Modal - PopUP
+================*/
+
 header .fixed {
   position: fixed;
   inset: 0;
@@ -44,14 +95,20 @@ header .fixed {
   background-color: rgba(41, 41, 50, 0.9);
 }
 
-@keyframes zoomModal{
-    0% {scale: 0;}
-    70%{scale: 1.2; }
-    100% {scale: 1;}
+@keyframes zoomModal {
+  0% {
+    scale: 0;
+  }
+  70% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
 header .fixed ul.modal__wrapper {
-    animation: zoomModal 0.5s 1;
+  animation: zoomModal 0.5s 1;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
@@ -68,10 +125,10 @@ header .fixed ul.modal__wrapper li {
 }
 
 header .fixed ul.modal__wrapper li:first-child {
- text-align: right;
- border: none;
- padding-bottom: 0;
- padding-top: 0.2rem;
+  text-align: right;
+  border: none;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
 }
 
 header .fixed ul.modal__wrapper li:last-child {
@@ -82,8 +139,9 @@ header .fixed ul.modal__wrapper a {
   font-size: 1rem;
 }
 
-
-
+/*===============
+4. MediaQuery
+================*/
 
 @media (max-width: 700px) {
   header.flex nav {

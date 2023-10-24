@@ -6,13 +6,12 @@ export default function Header() {
   return (
     <header className="flex">
       <button
-        className="hamburger__menu"
+        className="hamburger__menu icon-menu flex"
         onClick={() => {
           setShowModal(true);
         }}
-      >
-        Burger_Menu
-      </button>
+      />
+
       <div />
 
       <nav>
@@ -35,19 +34,20 @@ export default function Header() {
         </ul>
       </nav>
 
-      <button>light</button>
+      <button className="mode flex">
+        <span className="icon-lightbulb-o"></span>
+      </button>
 
       {showModal && (
         <div className="fixed">
           <ul className="modal__wrapper">
             <li>
               <button
+                className="icon-remove"
                 onClick={() => {
                   setShowModal(false);
                 }}
-              >
-                False
-              </button>
+              />
             </li>
             <li>
               <a href="">A propos</a>
