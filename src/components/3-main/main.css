@@ -1,0 +1,135 @@
+/*======================
+Table of contents
+========================
+
+1. Left Section => Buttons
+2. Right Section => Cards
+3. MediaQuery
+*/
+
+main.flex {
+  gap: 2.6rem;
+  align-items: start;
+}
+
+/*===============
+1. Left Section => Buttons
+================*/
+
+main section.main__left.flex {
+  flex-direction: column;
+  gap: 10px;
+}
+
+main section.main__left.flex button {
+  background-color: var(--bgHeader);
+  width: 11rem;
+  padding: 0.8rem 0;
+  text-align: center;
+  font-size: 1.02rem;
+  text-transform: capitalize;
+  opacity: 0.6;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+main section.main__left.flex button:hover {
+  opacity: 1;
+}
+
+main section.main__left.flex button.active {
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  padding: 0.85rem 0;
+  border: 1px solid var(--orange);
+  border-radius: 4px;
+}
+
+/*===============
+2. Right Section => Cards
+================*/
+
+main section.main__right.flex {
+  /* flex-grow: 1; */
+  flex-wrap: wrap;
+  gap: 16px;
+  column-gap: 16px;
+  row-gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid rgba(252, 175, 93, 0.3);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.card:hover {
+  border: 1px solid var(--orange);
+  rotate: 1deg;
+  scale: 1.01;
+  cursor: pointer;
+}
+
+.card img {
+  border-radius: 5px;
+}
+
+.card .box__wrapper {
+  padding: 1rem 0.5rem;
+}
+
+.card .box__wrapper .title {
+  color: var(--title);
+}
+
+.card .box__wrapper .subtitle {
+  color: var(--subtitle);
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.card .box__wrapper .icons {
+  justify-content: space-around;
+}
+
+.card .icon-link,
+.card .icon-github {
+  color: var(--subtitle);
+  font-size: 1.2rem;
+}
+
+.card .icon-link:hover,
+.card .icon-github:hover {
+  color: var(--icon-hover);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/*===============
+2. MediaQuery
+================*/
+
+@media (max-width: 600px) {
+  main.flex {
+    flex-direction: column;
+    gap: 2.6rem;
+    align-items: center;
+  }
+
+  main section.main__left.flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  main section.main__left.flex button {
+    width: 8rem;
+    padding: 0.8rem 0;
+
+    font-size: 0.9rem;
+  }
+}
