@@ -109,7 +109,7 @@ main section.main__right.flex {
 }
 
 /*===============
-2. MediaQuery
+3. MediaQuery
 ================*/
 
 @media (max-width: 600px) {
