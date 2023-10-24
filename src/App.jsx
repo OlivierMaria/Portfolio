@@ -7,7 +7,6 @@ function App() {
   return (
     <div className="container__wrapper">
       <Header />
-      <div className="divider" />
       <Hero />
       <div className="divider" />
       <Main />

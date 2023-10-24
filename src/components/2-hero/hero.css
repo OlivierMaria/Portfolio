@@ -1,0 +1,71 @@
+/*======================
+Table of contents
+========================
+
+1. Left Section
+2. Right Section => Animation
+3. 
+4. 
+*/
+
+section.hero__wrapper {
+  margin-top: 2.5rem;
+}
+
+/*===============
+1. Left Section
+================*/
+
+section.hero__wrapper .avatar__wrapper.flex {
+  align-items: end;
+  gap: 0.6rem;
+}
+
+section.hero__wrapper .left__section {
+  flex-grow: 1;
+}
+
+section.hero__wrapper .avatar {
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--orange);
+  padding: 1px;
+  box-shadow: 2px 2px 40px rgba(199, 199, 199, 0.288) inset;
+}
+
+section.hero__wrapper .icon-bulb {
+  color: var(--yellow);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+section.hero__wrapper h1.title {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  margin: 25px 0;
+  color: var(--title);
+}
+
+section.hero__wrapper p.subtitle {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+}
+
+section.hero__wrapper .icons__wrapper {
+  font-size: 1.2rem;
+  gap: 1.5rem;
+  color: var(--subtitle);
+}
+
+section.hero__wrapper .icons__wrapper .icon:hover {
+  font-size: 1.4rem;
+  color: var(--icon-hover);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/*===============
+2. Right Section => Animation
+================*/

@@ -35,7 +35,7 @@ export default function Header() {
       </nav>
 
       <button className="mode flex">
-        <span className="icon-lightbulb-o"></span>
+        <span className="icon-moon-o"></span>
       </button>
 
       {showModal && (

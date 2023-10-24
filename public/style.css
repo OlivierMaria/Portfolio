@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?z0snfa');
-  src:  url('fonts/icomoon.eot?z0snfa#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?z0snfa') format('truetype'),
-    url('fonts/icomoon.woff?z0snfa') format('woff'),
-    url('fonts/icomoon.svg?z0snfa#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?mx60ce');
+  src:  url('fonts/icomoon.eot?mx60ce#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?mx60ce') format('truetype'),
+    url('fonts/icomoon.woff?mx60ce') format('woff'),
+    url('fonts/icomoon.svg?mx60ce#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-bulb:before {
+  content: "\e901";
+}
+.icon-keyboard_arrow_up:before {
+  content: "\e900";
+}
+.icon-arrow-right-circle:before {
+  content: "\e902";
+}
+.icon-menu:before {
+  content: "\e903";
+}
+.icon-sun:before {
+  content: "\e904";
+}
 .icon-close:before {
   content: "\f00d";
 }
@@ -34,9 +49,24 @@
 .icon-times:before {
   content: "\f00d";
 }
-.icon-lightbulb-o:before {
-  content: "\f0eb";
+.icon-linkedin-square:before {
+  content: "\f08c";
 }
-.icon-menu:before {
-  content: "\e900";
+.icon-github-square:before {
+  content: "\f092";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-moon-o:before {
+  content: "\f186";
+}
+.icon-bubble2:before {
+  content: "\e96e";
+}
+.icon-link:before {
+  content: "\e9cb";
+}
+.icon-github:before {
+  content: "\eab0";
 }
