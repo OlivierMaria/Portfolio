@@ -51,7 +51,7 @@ main section.main__left.flex button.active {
 ================*/
 
 main section.main__right.flex {
-  /* flex-grow: 1; */
+  flex-grow: 1;
   flex-wrap: wrap;
   gap: 16px;
   column-gap: 16px;
@@ -82,6 +82,7 @@ main section.main__right.flex {
 
 .card .box__wrapper .title {
   color: var(--title);
+  text-transform: capitalize;
 }
 
 .card .box__wrapper .subtitle {
