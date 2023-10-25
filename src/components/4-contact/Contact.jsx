@@ -1,5 +1,6 @@
 import "./contact.css";
 import { useForm, ValidationError } from "@formspree/react";
+import Lottie from "lottie-react";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xoqorkaq");
