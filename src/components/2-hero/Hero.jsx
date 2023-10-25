@@ -1,8 +1,13 @@
 import "./hero.css";
+import Lottie from "lottie-react";
+import devAnimation from "../../animation/dev.json";
+import { useRef } from "react";
 
 export default function Hero() {
+  const lottieRef = useRef();
+
   return (
-    <section className="hero__wrapper flex">
+    <section className="hero__wrapper flex" id="about">
       <div className="left__section">
         <div className="avatar__wrapper flex">
           <img src="./me.png" className="avatar" alt="" />
@@ -20,11 +25,23 @@ export default function Hero() {
         </p>
 
         <div className="icons__wrapper flex">
-          <div className="icon icon-github-square"></div>
+          <div className="icon icon-github-square">
+            <a href="https://github.com/OlivierMaria"></a>
+          </div>
           <div className="icon icon-linkedin-square"></div>
         </div>
       </div>
-      <div className="right__section animation border">Animation</div>
+      <div className="right__section animation">
+        <Lottie
+          className=""
+          lottieRef={lottieRef}
+          onLoadedImages={() => {
+            //https://lottiereact.com/
+            lottieRef.current.setSpeed(0.5);
+          }}
+          animationData={devAnimation}
+        />
+      </div>
     </section>
   );
 }

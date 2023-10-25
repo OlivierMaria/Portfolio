@@ -16,7 +16,7 @@ export default function Main() {
     setArr(newArr);
   };
   return (
-    <main className="flex">
+    <main className="flex" id="project">
       <section className="main__left flex">
         <button
           onClick={() => {

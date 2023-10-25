@@ -1,15 +1,15 @@
 import "./contact.css";
 import { useForm, ValidationError } from "@formspree/react";
 import Lottie from "lottie-react";
-import doneAnimation from "../../../public/animation/done.json";
-import contactAnimation from "../../../public/animation/contact.json";
+import doneAnimation from "../../animation/done.json";
+import contactAnimation from "../../animation/contact.json";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xoqorkaq");
 
   return (
     <section className="contact__wrapper">
-      <h1 className="title">
+      <h1 className="title" id="contact">
         <span className="icon-envelope"></span>
         Me contacter
       </h1>
@@ -43,7 +43,7 @@ export default function Contact() {
               required
               name="message"
               id="message"
-              placeholder="message"
+              placeholder="Message"
             ></textarea>
             <ValidationError
               prefix="Message"

@@ -4,8 +4,7 @@ Table of contents
 
 1. Left Section
 2. Right Section => Animation
-3. 
-4. 
+3. MediaQuery
 */
 
 section.hero__wrapper {
@@ -73,3 +72,22 @@ section.hero__wrapper .icons__wrapper .icon:hover {
 /*===============
 2. Right Section => Animation
 ================*/
+
+section.hero__wrapper .animation {
+  width: 100%;
+}
+
+/*===============
+3. MediaQuery
+================*/
+
+@media (max-width:1250px) {
+  section.hero__wrapper .animation{
+    display: none;
+  }
+}
+  @media (max-width:600px) {
+  section.hero__wrapper .animation{
+    display: none;
+  }
+}
