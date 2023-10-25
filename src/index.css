@@ -107,7 +107,7 @@ button:active {
   background: #5a5a5a;
 }
 
-.scroll__top{
+.scroll__top {
   background-color: #ff9900c5;
   width: 2.6rem;
   height: 2.6rem;
@@ -118,8 +118,9 @@ button:active {
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.302);
   transition: 0.3s;
+  font-size: 1.3rem;
 }
-.scroll__top:hover{
+.scroll__top:hover {
   background-color: var(--orange);
 }
 
@@ -135,9 +136,10 @@ button:active {
     width: 98%;
     padding: 0 1.5rem;
   }
-  .scroll__top{
+  .scroll__top {
     opacity: 0.8;
     width: 2.2rem;
     height: 2.2rem;
+    font-size: 1rem;
   }
 }
