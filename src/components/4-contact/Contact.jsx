@@ -1,6 +1,9 @@
 import "./contact.css";
+import { useForm, ValidationError } from "@formspree/react";
 
 export default function Contact() {
+  const [state, handleSubmit] = useForm("xoqorkaq");
+
   return (
     <section className="contact__wrapper">
       <h1 className="title">
@@ -14,27 +17,45 @@ export default function Contact() {
       </p>
 
       <div className="flex">
-        <form>
+        <form onSubmit={handleSubmit} className="">
           <div className="flex">
             <label htmlFor="email">Adresse e-mail:</label>
             <input
+              autoComplete="off"
               required
               type="email"
-              name=""
+              name="email"
               id="email"
               placeholder="Adresse e-mail"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
             />
           </div>
           <div className="flex" style={{ marginTop: "24px" }}>
             <label htmlFor="message">Votre message:</label>
             <textarea
               required
-              name=""
+              name="message"
               id="message"
               placeholder="message"
             ></textarea>
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </div>
-          <button className="submit">Envoyer</button>
+          <button type="submit" disabled={state.submitting} className="submit">
+            {state.submitting ? "Envoie en cours..." : "Envoyer"}
+          </button>
+          {state.succeeded && (
+            <h1 style={{ fontSize: "16px", marginTop: "1.7rem" }}>
+              Votre message a été envoyé avec succès. 👌🏻
+            </h1>
+          )}
         </form>
         <div className="border animation">Animation</div>
       </div>
