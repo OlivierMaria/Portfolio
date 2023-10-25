@@ -20,13 +20,7 @@ export default function Header() {
             <a href="">A propos</a>
           </li>
           <li>
-            <a href="">Articles</a>
-          </li>
-          <li>
             <a href="">Projets</a>
-          </li>
-          <li>
-            <a href="">Speaking</a>
           </li>
           <li>
             <a href="">Contact</a>
@@ -52,15 +46,8 @@ export default function Header() {
             <li>
               <a href="">A propos</a>
             </li>
-
-            <li>
-              <a href="">Articles</a>
-            </li>
             <li>
               <a href="">Projets</a>
-            </li>
-            <li>
-              <a href="">Speaking</a>
             </li>
             <li>
               <a href="">Contact</a>
