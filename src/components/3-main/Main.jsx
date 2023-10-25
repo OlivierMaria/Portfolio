@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { myProjects } from "./myProjects.js";
+import { motion, AnimatePresence } from "framer-motion";
 import "./main.css";
 
 export default function Main() {
@@ -71,25 +72,34 @@ export default function Main() {
         </button>
       </section>
       <section className="main__right flex">
-        {arr.map((item) => {
-          return (
-            <article key={item.imgPath} className="card">
-              <img width={266} src={item.imgPath} alt="" />
+        <AnimatePresence>
+          {arr.map((item) => {
+            return (
+              <motion.article
+                layout
+                initial={{ transform: "scale(0)" }}
+                animate={{ transform: "scale(1)" }}
+                transition={{ type: "spring", damping: 8, stiffness: 50 }}
+                key={item.imgPath}
+                className="card"
+              >
+                <img width={266} src={item.imgPath} alt="" />
 
-              <div style={{ width: "266px" }} className="box__wrapper">
-                <h1 className="title">{item.projectTitle}</h1>
-                <p className="subtitle">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Corporis sit{" "}
-                </p>
-                <div className="flex icons">
-                  <div className="icon-link"></div>
-                  <div className="icon-github"></div>
+                <div style={{ width: "266px" }} className="box__wrapper">
+                  <h1 className="title">{item.projectTitle}</h1>
+                  <p className="subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis sit{" "}
+                  </p>
+                  <div className="flex icons">
+                    <div className="icon-link"></div>
+                    <div className="icon-github"></div>
+                  </div>
                 </div>
-              </div>
-            </article>
-          );
-        })}
+              </motion.article>
+            );
+          })}
+        </AnimatePresence>
       </section>
     </main>
   );

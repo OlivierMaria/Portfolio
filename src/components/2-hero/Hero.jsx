@@ -2,6 +2,7 @@ import "./hero.css";
 import Lottie from "lottie-react";
 import devAnimation from "../../animation/dev.json";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const lottieRef = useRef();
@@ -14,7 +15,14 @@ export default function Hero() {
           <div className="icon-bulb"></div>
         </div>
 
-        <h1 className="title">Développeur Web JavaScript Full Stack.</h1>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="title"
+        >
+          Développeur Web JavaScript Full Stack.
+        </motion.h1>
         <p className="subtitle">
           En tant que développeur web Full Stack spécialisé en JavaScript, je
           transforme les concepts en solutions web percutantes. Grâce à ma
@@ -25,10 +33,20 @@ export default function Hero() {
         </p>
 
         <div className="icons__wrapper flex">
-          <div className="icon icon-github-square">
-            <a href="https://github.com/OlivierMaria"></a>
-          </div>
-          <div className="icon icon-linkedin-square"></div>
+          <a
+            href="https://github.com/OlivierMaria"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="icon icon-github-square"></div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/oliviermaria09/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="icon icon-linkedin-square"></div>
+          </a>
         </div>
       </div>
       <div className="right__section animation">

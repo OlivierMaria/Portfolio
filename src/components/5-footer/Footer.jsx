@@ -5,10 +5,22 @@ export default function Footer() {
     <footer className="flex">
       <ul className="flex">
         <li>
-          <a href="">Github</a>
+          <a
+            href="https://github.com/OlivierMaria"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
         </li>
         <li>
-          <a href="">Linkedin</a>
+          <a
+            href="https://www.linkedin.com/in/oliviermaria09/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Linkedin
+          </a>
         </li>
       </ul>
 
