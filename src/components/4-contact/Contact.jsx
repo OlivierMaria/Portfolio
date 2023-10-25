@@ -1,6 +1,8 @@
 import "./contact.css";
 import { useForm, ValidationError } from "@formspree/react";
 import Lottie from "lottie-react";
+import doneAnimation from "../../../public/animation/done.json";
+import contactAnimation from "../../../public/animation/contact.json";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xoqorkaq");
@@ -17,7 +19,7 @@ export default function Contact() {
         objectifs en ligne.
       </p>
 
-      <div className="flex">
+      <div style={{ justifyContent: "space-between" }} className="flex">
         <form onSubmit={handleSubmit} className="">
           <div className="flex">
             <label htmlFor="email">Adresse e-mail:</label>
@@ -53,12 +55,26 @@ export default function Contact() {
             {state.submitting ? "Envoie en cours..." : "Envoyer"}
           </button>
           {state.succeeded && (
-            <h1 style={{ fontSize: "16px", marginTop: "1.7rem" }}>
+            <p
+              className="flex"
+              style={{ fontSize: "16px", marginTop: "1.7rem" }}
+            >
+              <Lottie
+                loop={false}
+                style={{ height: 37 }}
+                animationData={doneAnimation}
+              />
               Votre message a été envoyé avec succès. 👌🏻
-            </h1>
+            </p>
           )}
         </form>
-        <div className="border animation">Animation</div>
+        <div className="animation">
+          <Lottie
+            className="contact__animation"
+            style={{ height: 355 }}
+            animationData={contactAnimation}
+          />
+        </div>
       </div>
     </section>
   );

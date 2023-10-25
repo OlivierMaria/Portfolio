@@ -92,6 +92,12 @@ section.contact__wrapper .submit:hover {
 3. MediaQuery
 ================*/
 
+@media (max-width: 1200px) {
+  section.contact__wrapper .contact__animation{
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   section.contact__wrapper .animation {
     display: none;
