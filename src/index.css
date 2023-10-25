@@ -2,10 +2,10 @@
 html {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.1px;
-}
-html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -107,6 +107,22 @@ button:active {
   background: #5a5a5a;
 }
 
+.scroll__top{
+  background-color: #ff9900c5;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 3%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.302);
+  transition: 0.3s;
+}
+.scroll__top:hover{
+  background-color: var(--orange);
+}
+
 @media (max-width: 1000px) {
   .container__wrapper {
     width: 90%;
@@ -118,5 +134,10 @@ button:active {
   .container__wrapper {
     width: 98%;
     padding: 0 1.5rem;
+  }
+  .scroll__top{
+    opacity: 0.8;
+    width: 2.2rem;
+    height: 2.2rem;
   }
 }

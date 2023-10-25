@@ -5,7 +5,7 @@ import Contact from "./components/4-contact/Contact";
 import Footer from "./components/5-footer/Footer";
 function App() {
   return (
-    <div className="container__wrapper">
+    <div id="up" className="container__wrapper">
       <Header />
       <Hero />
       <div className="divider" />
@@ -14,6 +14,10 @@ function App() {
       <Contact />
       <div className="divider" />
       <Footer />
+
+      <a href="#up">
+        <button className="icon-keyboard_arrow_up scroll__top"></button>
+      </a>
     </div>
   );
 }
