@@ -22,7 +22,7 @@ main section.main__left.flex {
 }
 
 main section.main__left.flex button {
-  background-color: var(--bgHeader);
+  background-color: rgba(36, 38, 46, 1);
   width: 11rem;
   padding: 0.8rem 0;
   text-align: center;
@@ -46,6 +46,10 @@ main section.main__left.flex button.active {
   border-radius: 4px;
 }
 
+.light main section.main__left.flex button.active {
+  border: 1px solid #000;
+}
+
 /*===============
 2. Right Section => Cards
 ================*/
@@ -60,9 +64,16 @@ main section.main__right.flex {
 }
 
 .card {
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 1px 1px 1px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(252, 175, 93, 0.3);
   transition: 0.3s;
   border-radius: 5px;
+}
+
+.light .card,
+.light .card:hover {
+  border: none;
+  background-color: rgba(246, 246, 246);
 }
 
 .card:hover {

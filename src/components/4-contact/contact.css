@@ -50,6 +50,14 @@ section.contact__wrapper #message {
   font-size: 1.1rem;
 }
 
+.light section.contact__wrapper #email,
+.light section.contact__wrapper #message {
+  background-color: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(128, 128, 128, 0.45);
+  box-shadow: 1px solid rgba(73, 73, 75, 0.1);
+  color: #232324;
+}
+
 section.contact__wrapper #email:focus,
 section.contact__wrapper #message:focus {
   border: 1px solid var(--orange);
@@ -65,7 +73,7 @@ section.contact__wrapper #message {
   resize: vertical;
 }
 section.contact__wrapper .submit {
-  background-color: var(--bgHeader);
+  background-color: rgba(36, 38, 46, 1);
   padding: 0.8rem 1.9rem;
   text-align: center;
   font-size: 1.02rem;
@@ -104,7 +112,7 @@ section.contact__wrapper .submit:hover {
   section.contact__wrapper #message {
     width: 100%;
     margin-left: 0;
-    padding: 0.7rem 0;
+    padding: 0.7rem 1rem;
     margin-top: 1rem;
   }
 

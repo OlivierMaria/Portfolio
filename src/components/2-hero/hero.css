@@ -28,8 +28,12 @@ section.hero__wrapper .left__section {
 section.hero__wrapper .avatar {
   width: 100px;
   border-radius: 50%;
-  border: 1px solid var(--orange);
   padding: 1px;
+  box-shadow: 2px 2px 40px rgba(199, 199, 199, 0.288) inset;
+}
+
+.light section.hero__wrapper .avatar {
+  border: 0 solid rgb(28, 27, 27);
   box-shadow: 2px 2px 40px rgba(199, 199, 199, 0.288) inset;
 }
 
