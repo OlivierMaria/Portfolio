@@ -16,4 +16,11 @@ export const myProjects = [
     category: ["node", "express"],
     imgPath: "./05.jpg",
   },
+  {
+    projectTitle: "OrageOracle",
+    category: ["javascript"],
+    imgPath: "./OrageOracle.png",
+    subtitle:
+      "Une application météo JavaScript pour des prévisions rapides et précises. 🌤️",
+  },
 ];

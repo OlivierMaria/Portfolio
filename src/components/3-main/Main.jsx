@@ -87,13 +87,16 @@ export default function Main() {
 
                 <div style={{ width: "266px" }} className="box__wrapper">
                   <h1 className="title">{item.projectTitle}</h1>
-                  <p className="subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corporis sit{" "}
-                  </p>
+                  <p className="subtitle">{item.subtitle}</p>
                   <div className="flex icons">
                     <div className="icon-link"></div>
-                    <div className="icon-github"></div>
+                    <a
+                      href="https://github.com/OlivierMaria/OrageOracle"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="icon-github"></div>
+                    </a>
                   </div>
                 </div>
               </motion.article>
