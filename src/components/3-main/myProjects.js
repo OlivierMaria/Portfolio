@@ -9,7 +9,6 @@ export const myProjects = [
     category: ["javascript"],
     imgPath: "./02.jpg",
   },
-  { projectTitle: "React project", category: ["react"], imgPath: "./03.jpg" },
   { projectTitle: "NextJs project", category: ["nextJs"], imgPath: "./04.jpg" },
   {
     projectTitle: "NodeJs project",
@@ -17,10 +16,11 @@ export const myProjects = [
     imgPath: "./05.jpg",
   },
   {
-    projectTitle: "OrageOracle",
-    category: ["javascript"],
-    imgPath: "./OrageOracle.png",
-    subtitle:
-      "Une application météo JavaScript pour des prévisions rapides et précises. 🌤️",
+    projectTitle: "Web3Wise",
+    category: ["react"],
+    imgPath: "./web3wise.png",
+    subtitle: "Web3Wise : Votre guide vers le futur du Web décentralisé. 🌐✨",
+    links: "https://web3wise.netlify.app/",
+    github: "https://github.com/OlivierMaria/Web3Wise",
   },
 ];

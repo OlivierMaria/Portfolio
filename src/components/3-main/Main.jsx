@@ -89,9 +89,15 @@ export default function Main() {
                   <h1 className="title">{item.projectTitle}</h1>
                   <p className="subtitle">{item.subtitle}</p>
                   <div className="flex icons">
-                    <div className="icon-link"></div>
                     <a
-                      href="https://github.com/OlivierMaria/OrageOracle"
+                      href={item.links}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="icon-link"></div>
+                    </a>
+                    <a
+                      href={item.github}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
