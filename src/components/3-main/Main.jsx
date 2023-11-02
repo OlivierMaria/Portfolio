@@ -54,22 +54,6 @@ export default function Main() {
         >
           React & MUI
         </button>
-        <button
-          onClick={() => {
-            handleClick("nextJs");
-          }}
-          className={currentActive === "nextJs" ? "active" : null}
-        >
-          NextJs
-        </button>
-        <button
-          onClick={() => {
-            handleClick("node");
-          }}
-          className={currentActive === "node" ? "active" : null}
-        >
-          Node & Express
-        </button>
       </section>
       <section className="main__right flex">
         <AnimatePresence>
