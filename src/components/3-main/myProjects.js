@@ -23,4 +23,13 @@ export const myProjects = [
     links: "https://web3wise.netlify.app/",
     github: "https://github.com/OlivierMaria/Web3Wise",
   },
+  {
+    projectTitle: "ChronoDAO",
+    category: ["react"],
+    imgPath: "./chrono.png",
+    subtitle:
+      "ChronoDAO : Les principes des DAO et le jeu BigTime en vedette.🌐",
+    links: "https://website-iota-blue-94.vercel.app/",
+    github: "https://github.com/ChronoDAO/website",
+  },
 ];
