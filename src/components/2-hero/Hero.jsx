@@ -21,15 +21,15 @@ export default function Hero() {
           transition={{ duration: 2 }}
           className="title"
         >
-          Développeur Web JavaScript Full Stack.
+          Développeur Web Frontend
         </motion.h1>
         <p className="subtitle">
-          En tant que développeur web Full Stack spécialisé en JavaScript, je
+          En tant que développeur web frontend spécialisé en JavaScript, je
           transforme les concepts en solutions web percutantes. Grâce à ma
-          maîtrise de React, Node.js, Next.js et Express, je crée des
-          expériences numériques qui captivent les utilisateurs, renforcent la
-          présence en ligne et stimulent la croissance de votre entreprise. Prêt
-          à façonner votre succès en ligne.
+          maîtrise de HTML, CSS, Javascript & React je crée des expériences
+          numériques qui captivent les utilisateurs, renforcent la présence en
+          ligne et stimulent la croissance de votre entreprise. Prêt à façonner
+          votre succès en ligne.
         </p>
 
         <div className="icons__wrapper flex">
