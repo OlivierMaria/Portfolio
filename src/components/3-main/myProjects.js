@@ -34,4 +34,12 @@ export const myProjects = [
     links: "https://maria-olivier-portfolio.netlify.app/",
     github: "https://github.com/OlivierMaria/Portfolio",
   },
+  {
+    projectTitle: "Aksil",
+    category: ["react"],
+    imgPath: "./Aksil.png",
+    subtitle: "Aksil Fastfood : Rapidité et Gourmandise en harmonie. 🥩",
+    links: "https://maria-olivier-portfolio.netlify.app/",
+    github: "https://github.com/OlivierMaria/AksilFastFood",
+  },
 ];
