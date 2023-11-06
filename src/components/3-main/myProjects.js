@@ -1,8 +1,11 @@
 export const myProjects = [
   {
-    projectTitle: "CSS project",
+    projectTitle: "AiGeniusHUB",
     category: ["css", "html"],
-    imgPath: "./01.jpg",
+    imgPath: "./AiGeniusHub.png",
+    subtitle: "AiGeniusHUB :  intégration HTML & CSS 📃",
+    links: "https://web3wise.netlify.app/",
+    github: "https://github.com/OlivierMaria/AIGeniusHub",
   },
   {
     projectTitle: "JavaScript project",
