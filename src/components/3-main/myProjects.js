@@ -39,7 +39,7 @@ export const myProjects = [
     category: ["react"],
     imgPath: "./Aksil.png",
     subtitle: "Aksil Fastfood : Rapidité et Gourmandise en harmonie. 🥩",
-    links: "https://maria-olivier-portfolio.netlify.app/",
+    links: "https://aksilfood.netlify.app/",
     github: "https://github.com/OlivierMaria/AksilFastFood",
   },
 ];
