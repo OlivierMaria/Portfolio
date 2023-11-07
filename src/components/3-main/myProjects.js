@@ -3,9 +3,17 @@ export const myProjects = [
     projectTitle: "AiGeniusHUB",
     category: ["css", "html"],
     imgPath: "./AiGeniusHub.png",
-    subtitle: "AiGeniusHUB :  intégration HTML & CSS 📃",
+    subtitle: "AiGeniusHUB :  intégration HTML & CSS | Flexbox 📃",
     links: "https://web3wise.netlify.app/",
     github: "https://github.com/OlivierMaria/AIGeniusHub",
+  },
+  {
+    projectTitle: "GoldRush",
+    category: ["css", "html"],
+    imgPath: "./goldrush.png",
+    subtitle: "GoldRush :  intégration HTML & CSS | Grid ♨️",
+    links: "https://web3wise.netlify.app/",
+    github: "https://github.com/OlivierMaria/GoldRush",
   },
   {
     projectTitle: "JavaScript project",
